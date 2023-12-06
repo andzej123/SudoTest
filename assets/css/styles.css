@@ -67,6 +67,7 @@ body {
   top: 365px;
   right: -390px;
   z-index: -1;
+  display: none;
 }
 
 .circle_footer {
@@ -93,6 +94,10 @@ body {
 }
 
 @media only screen and (min-width: 1440px) {
+  .circle_api {
+    display: block;
+  }
+  
   .circle_partners_section {
     top: -359px;
     left: -235px;
@@ -381,6 +386,7 @@ header span {
   position: relative;
   padding: 0 18px;
   margin-top: 80px;
+  overflow: hidden;
 }
 
 .api_logo {
@@ -978,10 +984,11 @@ footer form {
   .dual_phones_outer {
     display: flex;
     flex-direction: row-reverse;
+    margin-bottom: 96px;
   }
 
   .dual_phones {
-    margin-top: 110px;
+    margin-top: 112px;
     margin-right: 152px;
     gap: 40px;
   }
@@ -1011,7 +1018,7 @@ footer form {
 
   .pricing_cards_section {
     padding: 0;
-    margin-top: 97px;
+    margin-top: 0px;
     display: grid;
     grid-template-columns: 365px 365px 365px;
     justify-content: center;
