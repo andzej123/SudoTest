@@ -57,55 +57,44 @@ body {
 
 .circle_partners_section {
   background-color: var(--CircleBlackBg);
-  top: -600px;
+  top: calc(-600px + (100vw - 375px) * 0.1348600508905852);
   left: calc((100vw - 780px) / 2);
   z-index: 0;
 }
 
 .circle_api {
+  width: calc(780px + (100vw - 1440px) * 0.5);
+  height: calc(780px + (100vw - 1440px) * 0.5);
+  border-radius: calc(780px + (100vw - 1440px) * 0.5);
   background-color: var(--CircleColor);
-  top: 365px;
-  right: -390px;
+  top: calc(445px - (100vw - 1440px) * 0.7);
+  right: calc(-390px + (100vw - 1440px) * 3.1);
   z-index: -1;
   display: none;
 }
 
 .circle_footer {
   background-color: var(--CircleBlackBg);
-  top: 176px;
-  left: -202px;
+  top: calc(176px - (100vw - 375px) * 0.8244274809160305);
+  left: calc(-202px + (100vw - 375px) * 1.493638676844784);
   z-index: 0;
 }
 
 @media only screen and (min-width: 768px) {
   .circle_partners_section {
-    top: -547px;
+    top: calc(-547px + (100vw - 768px) * 0.2797619047619048);
+    left: calc(-6px - (100vw - 768px) * 0.3407738095238095);
   }
 
   .circle_footer {
     top: -148px;
-    left: 385px;
-  }
-
-  .circle_top {
-    /* left: 800px !important; */
-    /* top: -172px !important; */
+    left: calc(385px + (100vw - 768px) * 0.9970238095238095);
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .circle_api {
     display: block;
-  }
-
-  .circle_partners_section {
-    top: -359px;
-    left: -235px;
-  }
-
-  .circle_footer {
-    top: -148px;
-    left: 1055px;
   }
 }
 
@@ -460,6 +449,11 @@ header span {
   overflow: hidden;
 }
 
+.footer_api_logo {
+  position: relative;
+  z-index: 5;
+}
+
 .footer_list {
   list-style-type: none;
   padding: 0;
@@ -732,6 +726,8 @@ footer form {
     letter-spacing: -0.369px;
     margin-top: 61px;
     margin-bottom: 25px;
+    position: relative;
+    z-index: 5;
   }
 
   .partners_section p {
@@ -746,6 +742,14 @@ footer form {
   .api_logo img {
     width: 393px;
     margin-top: 20px;
+  }
+
+  .api_section {
+    margin-top: 0;
+  }
+
+  .api_logo_outer {
+    margin-top: 80px;
   }
 
   .api_section h2 {

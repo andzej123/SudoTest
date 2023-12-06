@@ -57,9 +57,7 @@ function calcTop() {
   return result;
 }
 
-// let wi = 780 + (window.innerWidth - 375) * 0.43;
 let wi = calcCircle();
-// let circlePosition = (window.innerWidth - wi) / 2;
 let circlePosition = calcLeft();
 let circleTop = calcTop();
 let burgerLeft =
@@ -84,9 +82,7 @@ if (window.innerWidth < 625) {
 window.addEventListener("resize", myFunction);
 
 function myFunction() {
-  // let wi = 780 + (window.innerWidth - 375) * 0.43;
   let wi = calcCircle();
-  // let circlePosition = (window.innerWidth - wi) / 2;
   let circlePosition = calcLeft();
   let circleTop = calcTop();
   let burgerLeft =
