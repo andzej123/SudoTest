@@ -33,6 +33,7 @@ body {
 
 .circle_top,
 .circle_burger_menu,
+.circle_api,
 .circle_partners_section,
 .circle_footer {
   width: 780px;
@@ -59,6 +60,13 @@ body {
   top: -600px;
   left: calc((100vw - 780px) / 2);
   z-index: 0;
+}
+
+.circle_api {
+  background-color: var(--CircleColor);
+  top: 365px;
+  right: -390px;
+  z-index: -1;
 }
 
 .circle_footer {
@@ -370,6 +378,7 @@ header span {
 /* >>>>>>  api logo <<<<<<<<<< */
 
 .api_section {
+  position: relative;
   padding: 0 18px;
   margin-top: 80px;
 }
