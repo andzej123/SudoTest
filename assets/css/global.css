@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans");
+/* font-family: 'DM Serif Display', serif; */
+/* font-family: 'Public Sans', sans-serif; */
+
+:root {
+  /* 01 Colors */
+  /* PRIMARY */
+  --DarkPink: #BA4270;
+  --LinkWaterWhite: #FBFCFE;
+  --BgColor: #EDF3F8;
+  --CircleColor : #D2DBE3;
+  --CircleBlackBg: #1F2C38;
+
+  /* SECONDARY */
+  --SanJuanBlue: #36536B;
+  --MirageBlue: #1B262F;
+  --CharmPink: #DA6D97;
+  --LightSanJuanBlue: #6C8294;
+
+  /* 02 Typography */
+  /* HEADINGS */
+  .H1_Large {
+    font-family: "DM Serif Display";
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 72px;
+  }
+  .H1_Small {
+    font-family: "DM Serif Display";
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 56px;
+  }
+  .H2 {
+    font-family: "DM Serif Display";
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .H3_Big {
+    font-family: "DM Serif Display";
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .H3_Small {
+    font-family: "Public Sans";
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .H4 {
+    font-family: "DM Serif Display";
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  /* BODY */
+  .Body_Copy1 {
+    font-family: "Public Sans";
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  /* 03 Buttons */
+  /* PRIMARY */
+  .prim_Btn_Light {
+    color: var(--LinkWaterWhite);
+    background-color: var(--DarkPink);
+  }
+  .prim_Btn_Light:hover {
+    color: var(--LinkWaterWhite);
+    background-color: var(--DarkPink);
+    opacity: 0.8;
+  }
+  .prim_Btn_Light:disabled {
+    color: var(--LinkWaterWhite);
+    background-color: var(--DarkPink);
+    opacity: 0.5;
+  }
+  /* SECONDARY */
+  /* Light */
+  .sec_Btn_Light {
+    color: var(--LinkWaterWhite);
+    background-color: var(--MirageBlue);
+    border-color: var(--LinkWaterWhite);
+  }
+  .sec_Btn_Light:hover {
+    color: var(--MirageBlue);
+    background-color: var(--LinkWaterWhite);
+    border-color: var(--LinkWaterWhite);
+  }
+  .sec_Btn_Light:disabled {
+    color: var(--LinkWaterWhite);
+    background-color: var(--MirageBlue);
+    border-color: var(--LinkWaterWhite);
+    opacity: 0.6;
+  }
+  /* Dark */
+  .sec_Btn_Dark {
+    color: var(--SanJuanBlue);
+    background-color: var(--LinkWaterWhite);
+    border-color: var(--SanJuanBlue);
+  }
+  .sec_Btn_Dark:hover {
+    color: var(--LinkWaterWhite);
+    background-color: var(--SanJuanBlue);
+    border-color: var(--SanJuanBlue);
+  }
+  .sec_Btn_Dark:disabled {
+    color: var(--SanJuanBlue);
+    background-color: var(--LinkWaterWhite);
+    border-color: var(--SanJuanBlue);
+    opacity: 0.6;
+  }
+
+  /* 04 Form Elements */
+  /* CHECKBOX */
+  .checkbox_container input[type="checkbox"] {
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+  }
+  /* checkbox unchecked */
+  .checkbox_container input[type="checkbox"]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+    padding: 1px;
+  }
+  /* checkbox unchecked background */
+  .checkbox_container input[type="checkbox"]:not(:checked)::before {
+    background-color: var(--SanJuanBlue);
+    opacity: 0.25;
+  }
+  /* checkbox checked background color */
+  .checkbox_container input[type="checkbox"]:checked::before {
+    background-color: var(--DarkPink);
+  }
+  /* checkmark settings */
+  .checkbox_container input[type="checkbox"]:checked::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    /* checkmark position */
+    top: 0.4em;
+    left: 0.7em;
+  }
+  /* checkbox disabled */
+  .checkbox_container input[type="checkbox"]:disabled::before {
+    background-color: var(--SanJuanBlue);
+    opacity: 0.05;
+    cursor: default;
+  }
+}
