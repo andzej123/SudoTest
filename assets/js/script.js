@@ -42,15 +42,15 @@ function calcLeft() {
   if (window.innerWidth <= 768) {
     result = (window.innerWidth - calcCircle()) / 2;
   } else {
-    result = -90 + (window.innerWidth - 768) * 1.3095238;
+    result = -82 + (window.innerWidth - 768) * 1.3095238;
   }
   return result;
 }
 
 function calcTop() {
   let result = 0;
-  if (window.innerWidth <= 768) {
-    result = -545 - (window.innerWidth - 375) * 0.2977099;
+  if (window.innerWidth < 768) {
+    result = -550 - (window.innerWidth - 375) * 0.2977099;
   } else {
     result = -662 + (window.innerWidth - 768) * 0.7291666666;
   }

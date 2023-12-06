@@ -51,7 +51,7 @@ body {
 
 .circle_burger_menu {
   background-color: var(--CircleBlackBg);
-  top: calc(-545px - (100vw - 375px) * 0.2977099);
+  top: calc(-550px - (100vw - 375px) * 0.2977099);
   left: -282px;
 }
 
@@ -97,7 +97,7 @@ body {
   .circle_api {
     display: block;
   }
-  
+
   .circle_partners_section {
     top: -359px;
     left: -235px;
@@ -412,7 +412,7 @@ header span {
 }
 
 .api_section img {
-  filter: drop-shadow(25px 25px 80px rgba(54, 83, 107, 0.3));
+  filter: drop-shadow(25px 25px 65px rgba(54, 83, 107, 0.3));
 }
 
 .dual_phones {
@@ -649,11 +649,11 @@ footer form {
   }
 
   .header_phone {
-    margin-top: 50px;
+    margin-top: 48px;
   }
 
   .header_phone img {
-    height: 299.317px;
+    height: 302px;
   }
 
   header h1 {
@@ -755,21 +755,16 @@ footer form {
   }
 
   .api_section p {
-    margin: 0 79px;
-    margin-top: 25px;
+    margin: 23px 79px 99px 79px;
   }
 
   .dual_phones {
     margin-top: 98px;
+    gap: 26px;
   }
 
   .dual_phones img {
     width: 168px;
-  }
-
-  .api_section p {
-    margin-top: 24px;
-    margin-bottom: 99px;
   }
 
   .pricing_cards_section {
@@ -826,7 +821,7 @@ footer form {
     line-height: 56px;
     font-weight: 400;
     letter-spacing: -0.369px;
-    margin-top: 55px;
+    margin-top: 57px;
     margin-bottom: 8px;
   }
 
@@ -835,7 +830,7 @@ footer form {
     justify-content: space-between;
     align-items: center;
     padding: 30px 40px;
-    margin-top: 86px;
+    margin-top: 84px;
   }
 
   .footer_list {
@@ -880,12 +875,12 @@ footer form {
 
   .header_phone {
     margin: 0;
-    margin-top: 2px;
-    margin-left: 97px;
+    margin-top: 0px;
+    margin-left: 96px;
   }
 
   .header_phone img {
-    height: 502px;
+    height: 504px;
   }
 
   .header_text {
@@ -957,7 +952,7 @@ footer form {
   }
 
   .api_logo img {
-    width: 445px;
+    width: 447px;
   }
 
   .api_logo_text h2 {
@@ -968,7 +963,8 @@ footer form {
 
   .api_logo_text p {
     width: 445px;
-    margin-left: 127px;
+    margin-left: 125px;
+    margin-top: 25px;
     text-align: start;
   }
 
@@ -1025,6 +1021,10 @@ footer form {
     column-gap: 8px;
   }
 
+  .pricing_cards_section h3 {
+    margin-top: 29px;
+  }
+
   .pricing_cards_section img {
     width: 106px;
   }
@@ -1064,7 +1064,7 @@ footer form {
   }
 
   .footer_form .header_form {
-    margin-top: 56px;
+    margin-top: 54px;
   }
 
   .footer_black {
@@ -1081,6 +1081,6 @@ footer form {
   }
 
   .social_media {
-    margin-left: 483px;
+    margin-left: 484px;
   }
 }
