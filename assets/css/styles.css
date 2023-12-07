@@ -241,6 +241,7 @@ header h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .header_form input {
@@ -507,6 +508,43 @@ footer form {
   margin-top: 4px;
 }
 
+/* pop-ups */
+
+.upper_form {
+  position: relative;
+}
+
+.inputField {
+  position: absolute;
+  top: 58px;
+  left: 20px;
+  max-width: 300px;
+  background-color: #da6d97;
+  font-weight: 400;
+  padding: 10px 15px;
+  border-radius: 15px;
+  color: white;
+  opacity: 0.9;
+  transition: opacity 150ms ease-in-out;
+  pointer-events: none;
+}
+
+.inputField:after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 50px;
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-bottom-color: #da6d97;
+}
+
+.hidden {
+  opacity: 0;
+  background-color: #da6d97;
+}
+
 /* >>>>>>>>>>> Active states <<<<<<<<<<<<< */
 
 .pay_api_logo:active,
@@ -578,6 +616,12 @@ footer form {
   }
 }
 
+@media only screen and (min-width: 450px) {
+  .inputField {
+    left: 25vw;
+  }
+}
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Tablet 768px <<<<<<<<<<<<<<< */
 
 @media only screen and (min-width: 768px) {
@@ -644,6 +688,10 @@ footer form {
 
   .header_phone {
     margin-top: 48px;
+  }
+
+  .inputField {
+    left: 20px;
   }
 
   .header_phone img {

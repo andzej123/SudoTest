@@ -105,3 +105,57 @@ function myFunction() {
     burgerCircle.style.left = `${burgerLeftBig}px`;
   }
 }
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< //
+
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
+
+const upperForm = document.querySelector(".upper_form");
+const lowerForm = document.querySelector(".lower_form");
+
+const testValid = (element, pattern) => {
+  const elem = element;
+  let errorMsg = elem.nextElementSibling;
+  errorMsg.innerHTML = `Please enter a valid email`;
+  setTimeout(function () {
+    errorMsg.classList.add("hidden");
+  }, 2000);
+  if (!pattern.test(elem.value)) {
+    errorMsg.classList.remove("hidden");
+    throw new Error("klaida");
+  } else {
+    errorMsg.classList.add("hidden");
+    errorMsg.innerHTML = `You just got demo send to your email ${elem.value}`;
+    errorMsg.classList.remove("hidden");
+    setTimeout(function () {
+      errorMsg.classList.add("hidden");
+      elem.value = "";
+    }, 2000);
+  }
+};
+
+upperForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const userName = upperForm.querySelector("#username");
+  const pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  try {
+    testValid(userName, pattern);
+    console.log("Forma OK");
+  } catch (error) {
+    console.log(error.message);
+  }
+});
+
+lowerForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const userName = lowerForm.querySelector("#username");
+  const pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  try {
+    testValid(userName, pattern);
+    console.log("Forma OK");
+  } catch (error) {
+    console.log(error.message);
+  }
+});
+
