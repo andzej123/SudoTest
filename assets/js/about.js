@@ -111,8 +111,10 @@ function myFunction() {
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 
-const upperForm = document.querySelector(".upper_form");
-const lowerForm = document.querySelector(".lower_form");
+const aboutForm = document.querySelector(".about_form");
+
+// console.log(aboutForm);
+
 
 const testValid = (element, pattern) => {
   const elem = element;
@@ -135,9 +137,11 @@ const testValid = (element, pattern) => {
   }
 };
 
-upperForm.addEventListener("submit", (event) => {
+
+
+aboutForm.addEventListener("submit", (event) => {
   event.preventDefault();
-  const userName = upperForm.querySelector("#username");
+  const userName = aboutForm.querySelector("#username");
   const pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
   try {
     testValid(userName, pattern);
@@ -146,18 +150,5 @@ upperForm.addEventListener("submit", (event) => {
     console.log(error.message);
   }
 });
-
-lowerForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const userName = lowerForm.querySelector("#username");
-  const pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-  try {
-    testValid(userName, pattern);
-    console.log("Forma OK");
-  } catch (error) {
-    console.log(error.message);
-  }
-});
-
 
 

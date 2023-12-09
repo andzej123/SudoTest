@@ -4,9 +4,6 @@
 
 * {
   -webkit-tap-highlight-color: transparent;
-}
-
-* {
   box-sizing: border-box;
 }
 
@@ -516,10 +513,10 @@ footer form {
 
 .inputField {
   position: absolute;
-  top: 58px;
+  top: -63px;
   left: 20px;
-  max-width: 300px;
   background-color: #da6d97;
+  min-height: 54px;
   font-weight: 400;
   padding: 10px 15px;
   border-radius: 15px;
@@ -532,12 +529,12 @@ footer form {
 .inputField:after {
   content: "";
   position: absolute;
-  top: -15px;
+  top: 54px;
   left: 50px;
   width: 0;
   height: 0;
   border: 9px solid transparent;
-  border-bottom-color: #da6d97;
+  border-top-color: #da6d97;
 }
 
 .hidden {
@@ -566,6 +563,7 @@ footer form {
 }
 
 @media (hover: hover) {
+
   .pay_api_logo:hover,
   .footer_api_logo img:hover,
   .burger_button:hover,
@@ -603,8 +601,7 @@ footer form {
   }
 
   .social_media img:hover {
-    filter: invert(33%) sepia(75%) saturate(701%) hue-rotate(290deg)
-      brightness(91%) contrast(88%);
+    filter: invert(33%) sepia(75%) saturate(701%) hue-rotate(290deg) brightness(91%) contrast(88%);
   }
 
   .footer_list li:hover {
@@ -739,18 +736,23 @@ footer form {
   .ps_logos_section div:nth-child(1) img {
     width: 129px;
   }
+
   .ps_logos_section div:nth-child(2) img {
     width: 145px;
   }
+
   .ps_logos_section div:nth-child(3) img {
     width: 140px;
   }
+
   .ps_logos_section div:nth-child(4) img {
     width: 131px;
   }
+
   .ps_logos_section div:nth-child(5) img {
     width: 96px;
   }
+
   .ps_logos_section div:nth-child(6) img {
     width: 137px;
   }
@@ -759,9 +761,11 @@ footer form {
     margin-left: 59px;
     margin-right: 60px;
   }
+
   .ps_logos_section div:nth-child(5) {
     margin: 0;
   }
+
   .ps_logos_section div:nth-child(6) {
     margin: 0;
     margin-left: 5px;
@@ -1088,6 +1092,7 @@ footer form {
   .pricing_cards_first_col div {
     margin-right: 10px;
   }
+
   .pricing_cards_second_col {
     margin-right: 13px;
   }
@@ -1136,3 +1141,30 @@ footer form {
     margin-left: 484px;
   }
 }
+
+@media only screen and (min-width: 1600px) {
+  .navbar_tablet {
+    margin: 50px 150px;
+    justify-content: space-between;
+  } 
+
+  header {
+    margin: 0;
+    justify-content: center;
+    gap: 200px;
+  }
+
+  .header_phone {
+    margin: 0;
+  }
+
+  .header_text {
+    margin: 0;
+    margin-top: 60px;
+  }
+
+  .partners_section_inner {
+    justify-content: center;
+  }
+}
+

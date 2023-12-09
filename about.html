@@ -1,11 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>ABOUT</h1>
-</body>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/images/MicrosoftTeams-image.ico"
+    />
+    <link rel="stylesheet" href="assets/css/about.css" />
+    <script type="module" defer src="assets/js/about.js"></script>
+  </head>
+
+  <body>
+    <div class="circle_outer_top">
+      <div class="circle_top"></div>
+    </div>
+    <nav>
+      <div class="burger_menu_logos">
+        <div class="pay_api_logo">
+          <a target="_blank" href="index.html"
+            ><img src="assets/images/pay-api-logo.svg" alt="pay api logo"
+          /></a>
+        </div>
+        <button class="burger_button">
+          <img src="assets/images/burger-logo.svg" alt="burger button" />
+        </button>
+      </div>
+      <div class="burger_menu">
+        <div class="circle_burger_menu"></div>
+        <div class="burger_menu_x_outer">
+          <div class="burger_menu_x">
+            <img
+              src="assets/images/burger-x.svg"
+              alt="burger menu close button"
+            />
+          </div>
+        </div>
+        <hr class="burger_menu_line" />
+        <ul class="burger_menu_list">
+          <li><a href="pricing.html" target="_blank">Pricing</a></li>
+          <li><a href="about.html" target="_blank">About</a></li>
+          <li><a href="contact.html" target="_blank">Contact</a></li>
+        </ul>
+        <div class="schedule-a-demo-outer-burger">
+          <button disabled class="schedule-a-demo-burger">
+            Schedule a Demo
+          </button>
+        </div>
+      </div>
+      <div class="navbar_tablet">
+        <div class="pay_api_logo_tablet">
+          <a target="_blank" href="index.html"
+            ><img src="assets/images/pay-api-logo.svg" alt="pay api logo"
+          /></a>
+        </div>
+        <div class="navbar_list">
+          <a target="_blank" href="pricing.html">Pricing</a>
+          <a target="_blank" href="about.html">About</a>
+          <a target="_blank" href="contact.html">Contact</a>
+        </div>
+        <div>
+          <button disabled class="schedule_a_demo_navar">
+            Schedule a Demo
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="topSection">
+      <div class="TS_firstBlock">
+        <h1>
+          We empower innovators by delivering access to the financial system
+        </h1>
+      </div>
+      <div class="TS_secondBlock">
+        <h2>Our Vision</h2>
+        <p>
+          Our main goal is to build beautiful consumer experiences along with
+          developer-friendly infrastructure. The result is an intelligent tool
+          that gives everyone the ability to create amazing products that solve
+          big problems. We are deeply focused on democratizing financial
+          services through technology.
+        </p>
+      </div>
+      <div class="TS_thirdBlock">
+        <h2>Our Business</h2>
+        <p>
+          At the core of our platform is the technical infrastructure APIs that
+          connect consumers. Our innovative product provides key insights for
+          businesses and individuals, as well as robust reporting for
+          traditional financial institutions and developers.
+        </p>
+      </div>
+    </div>
+    <div class="photoSection">
+      <div class="photoSection_circle"></div>
+      <picture>
+        <source media="(min-width:1440px)" srcset="assets/images/Bitmap2.png" />
+        <source media="(min-width:768px)" srcset="assets/images/Bitmap1.png" />
+        <source media="(min-width:375px)" srcset="assets/images/Bitmap.png" />
+        <img src="assets/images/Bitmap.png" alt="photo" />
+      </picture>
+    </div>
+    <div class="teamMembersSection">
+      <hr class="topHr" />
+      <div class="TMS_fisrtBlock">
+        <p>Team Members</p>
+        <h2>300+</h2>
+      </div>
+      <div class="TMS_secondBlock">
+        <p>Offices in the US</p>
+        <h2>3</h2>
+      </div>
+      <div class="TMS_thirdBlock">
+        <p>Transactions analyzed</p>
+        <h2>10M+</h2>
+      </div>
+      <hr />
+    </div>
+    <div class="bottomSection">
+      <div>
+        <h2>The Culture</h2>
+        <p>
+          We strongly believe there's always an opportunity to learn from each
+          other outside of day-to-day work, whether it's company-wide offsites,
+          internal hackathons, or co-worker meetups. We always value cross-team
+          collaboration and diversity of thought, no matter the job title.
+        </p>
+      </div>
+      <div>
+        <h2>The People</h2>
+        <p>
+          We're all passionate about building a more efficient and inclusive
+          financial infrastructure together. At PayAPI, we have diverse
+          backgrounds and skills.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer_form about_form">
+        <h2>Ready to start?</h2>
+        <form class="footer_form_inner lower_form">
+          <input type="text" id="username" placeholder="Enter email address" />
+          <span class="inputField hidden"></span>
+          <button type="submit" class="schedule-a-demo">Schedule a Demo</button>
+        </form>
+      </div>
+      <div class="footer_black">
+        <div class="circle_footer"></div>
+        <div class="footer_api_logo">
+          <a href="index.html"><img src="assets/images/api-logo-footer.svg" alt="Pay api logo" /></a>
+        </div>
+        <ul class="footer_list">
+          <li><a href="pricing.html" target="_blank">Pricing</a></li>
+          <li><a href="about.html" target="_blank">About</a></li>
+          <li><a href="contact.html" target="_blank">Contact</a></li>
+        </ul>
+        <div class="social_media">
+          <a href="http://www.facebook.com" target="_blank"><img src="assets/images/icon_facebook.svg"
+              alt="facebook icon" /></a>
+          <a href="http://www.twitter.com" target="_blank"><img src="assets/images/icon_twitter.svg"
+              alt="twitter icon" /></a>
+          <a href="http://www.linkedin.com" target="_blank"><img src="assets/images/icon_linkedin.svg"
+              alt="linkedin icon" /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
